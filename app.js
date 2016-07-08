@@ -1,9 +1,50 @@
 var songsArray = [];
 
-function SongConstructor (n) {
-this.name = name;
-this.question1 = ;
-this.
-this.compatibility = 0;
-songsArray.push(this);
+function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7) {
+  this.name = name;
+  this.question1 = answer1;
+  this.question2 = answer2;
+  this.question3 = answer3;
+  this.question4 = answer4;
+  this.question5 = answer5;
+  this.question6 = answer6;
+  this.question7 = answer7;
+  this.compatibility = 0;
+  songsArray.push(this);
 };
+
+var newYork = new Song('Welcome to New York', Cumulus, Pink);
+var blankSpace = new Song('Blank Space', Stratus, Purple );
+var style = new Song('Style', Stratocumulus, Red);
+var woods = new Song('Out of the Woods', Stratus, Blue );
+var stay = new Song('All You Had to Do Was Stay', Cumulonimbus, Purple );
+var shake = new Song('Shake It Off', Stratus, Red);
+var wish = new Song('I Wish You Would',Cumulonimbus, Blue  );
+var blood = new Song('Bad Blood', Cumulus, Red);
+var dreams = new Song('Wildest Dreams', Stratus, Blue);
+var girl = new Song('How you Get the Girl', Pink );
+var love = new Song('This Love', Cumulonimbus, Blue );
+var places = new Song('I Know Places', Cumulus, Purple);
+var clean = new Song('Clean', Cumulus, Red );
+var grace = new Song('State of Grace', Cumulonimbus, Pink );
+var red = new Song('Red', Cumulus);
+var treacherous = new Song('Treacherous', Red);
+var  trouble = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
+var  = new Song(, );
