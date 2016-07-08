@@ -21,8 +21,7 @@ var woods = new Song('Out of the Woods', Stratus, Blue );
 var stay = new Song('All You Had to Do Was Stay', Cumulonimbus, Purple, Taylor Lautner);
 var blankSpace = new Song('Blank Space', Stratus, Purple, Zac Efron );
 var shake = new Song('Shake It Off', Stratus, Red, Taylor Lautner);
-var wish = new Song('I Wish You Would', Cumulonimbus, Blue, Zac Efron
-  );
+var wish = new Song('I Wish You Would', Cumulonimbus, Blue, Zac Efron);
 var blood = new Song('Bad Blood', Cumulus, Red, Jake Gyllenhaal);
 var dreams = new Song('Wildest Dreams', Stratus, Blue);
 var girl = new Song('How you Get the Girl', Stratus, Pink, Jake Gyllenhaal);
