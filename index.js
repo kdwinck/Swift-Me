@@ -11,9 +11,10 @@ function createUser(event) {
   var userName = event.target.userName.value;
   var password = event.target.password.value;
 
-  if (localStorage) {
-    var currentUser = new User()
-  }
+ 
+  // if (localStorage) {
+  //   var currentUser = localStorage
+  // }
 
 }
 
