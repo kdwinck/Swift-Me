@@ -2,18 +2,19 @@
 <html>
   <head>
     <link rel="stylesheet" href="quiz.css" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <title>Swift Quiz</title>
   </head>
   <body>
     <form id="quiz">
       <fieldset>
-        <label for="cloud">If you were a cloud, which could would you be?</label></br>
+        <label for="cloud">If you were a cloud, which type would you be?</label></br>
         <input type="radio" name="cloud" value="Cumulonimbus" checked/>Cumulonimbus</br>
         <input type="radio" name="cloud" value="Cumulus"/>Cumulus</br>
         <input type="radio" name="cloud" value="Stratus"/>Stratus</br>
         <input type="radio" name="cloud" value="Stratocumulus"/>Stratocumulus</br>
 
-        <label for="color">Which is your favorite color?</label></br>
+        <label for="color">What color best describes you right now?</label></br>
         <input type="radio" name="color" value="Red" checked/>Red</br>
         <input type="radio" name="color" value="Blue"/>Blue</br>
         <input type="radio" name="color" value="Pink"/>Pink</br>
@@ -21,7 +22,7 @@
 
         <label for="exb">Who is your favorite TaySwift Ex-boyfriend?</label></br>
         <input type="radio" name="exb" value="Taylor Lautner" checked/>Taylor Lautnor</br>
-        <input type="radio" name="exb" value="Harry Stiles"/>Harry Stiles</br>
+        <input type="radio" name="exb" value="Harry Stiles"/>Harry Styles</br>
         <input type="radio" name="exb" value="Zac Efron"/>Zac Efron</br>
         <input type="radio" name="exb" value="Jake Gyllenhaal"/>Jake Gyllenhaal<br>
 
@@ -52,6 +53,11 @@
         <input type='submit' value='Swift Me!'>
       </fieldset>
     </form>
+
+    <ul>
+      <li id='song'></li>
+    </ul>
+
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
