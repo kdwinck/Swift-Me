@@ -1,6 +1,7 @@
+////// global variables //////////////////////////////////////////////////////////////////////////////////////////////
 var songsArray = [];
-console.log(songsArray);
 
+/////// song object constructor //////////////////////////////////////////////////////////////////////////////////////
 function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7) {
   this.name = name;
   this.question1 = answer1;
@@ -14,6 +15,7 @@ function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answe
   songsArray.push(this);
 };
 
+/////// instantiate song objects /////////////////////////////////////////////////////////////////////////////////////////
 var newYork = new Song('Welcome to New York', 'Cumulus', 'Pink', 'Jake Gyllenhaal', 'Yangchuanosaurus', 'True', 'True', 'Coffee');
 var blankSpace = new Song('Blank Space', 'Stratus', 'Purple', 'Zac Efron', 'Diplodocus', 'True', 'True','Alcoholic');
 var style = new Song('Style', 'Stratocumulus', 'Red', 'Taylor Lautner', 'Diplodocus', 'True', 'True', 'Water');
@@ -45,3 +47,32 @@ var changed = new Song('Everything Has Changed', 'Stratocumulus', 'Pink', 'Taylo
 var starlight = new Song('Starlight', 'Stratus', 'Purple', 'Harry Stiles', 'Bambiraptor', 'True', 'True', 'Alcoholic');
 var again = new Song('Begin Again', 'Cumulus', 'Red', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'True', 'Alcoholic');
 var story = new Song('Love Story', 'Stratus', 'Purple', 'Jake Gyllenhaal', 'Diplodocus', 'True', 'True', 'Coffee');
+
+
+var quiz = {
+  answers: [],
+
+  question1: null,
+  question2: null,
+  question3: null,
+  question4: null,
+  question5: null,
+  question6: null,
+  question7: null,
+
+  updateQuizAnswers: function(event) {
+    event.preventDefault();
+    var quizEl = document.getElementById('quiz');
+    var inputs = quizEl.getElementsByTagName('input');
+
+    for (var i = 0; i < inputs.length - 3; i++) { //input.lengths - 3 to eliminate button and last quesiton from answers
+      if (inputs[i].checked) {
+        var answer = inputs[i].value;
+        quiz.answers.push(answer);
+      }
+    }
+  }
+};
+
+var form = document.getElementById('quiz');
+form.addEventListener('submit', quiz.updateQuizAnswers);
