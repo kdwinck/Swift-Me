@@ -1,5 +1,9 @@
-form{
-  position: flex;
-  flex-direction: column;
-  align-content: center;
+html {
+  height: 100%;
+  width: 100%;
+}
+
+form {
+  width: 80%;
+  margin: auto;
 }
