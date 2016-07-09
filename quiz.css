@@ -4,10 +4,24 @@ html {
 }
 
 form {
-  width: 80%;
+  width: 30%;
   margin: auto;
 }
 
 ul {
   font-family: 'Pacifico', cursive;
+}
+
+label, input{
+  margin-left: 20px;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.last{
+  margin-bottom: 20px;
 }
