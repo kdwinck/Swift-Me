@@ -4,13 +4,7 @@ var songsArray = [];
 /////// song object constructor //////////////////////////////////////////////////////////////////////////////////////
 function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7) {
   this.name = name;
-  this.question1 = answer1;
-  this.question2 = answer2;
-  this.question3 = answer3;
-  this.question4 = answer4;
-  this.question5 = answer5;
-  this.question6 = answer6;
-  this.question7 = answer7;
+  this.answers = [answer1, answer2, answer3, answer4, answer5, answer6, answer7];
   this.compatibility = 0;
   songsArray.push(this);
 };
@@ -52,14 +46,6 @@ var story = new Song('Love Story', 'Stratus', 'Purple', 'Jake Gyllenhaal', 'Dipl
 var quiz = {
   answers: [],
 
-  question1: null,
-  question2: null,
-  question3: null,
-  question4: null,
-  question5: null,
-  question6: null,
-  question7: null,
-
   updateQuizAnswers: function(event) {
     event.preventDefault();
     var quizEl = document.getElementById('quiz');
@@ -71,8 +57,20 @@ var quiz = {
         quiz.answers.push(answer);
       }
     }
+    console.log(songsArray);
+    quiz.compareAnswers();
+  },
+
+  compareAnswers: function(){
+    for(var song in songsArray) {
+      for(var index in songsArray[song].answers) {
+        if(songsArray[song].answers[index] === quiz.answers[index])
+          songsArray[song].compatibility += 1;
+      }
+    }
   }
 };
+
 
 var form = document.getElementById('quiz');
 form.addEventListener('submit', quiz.updateQuizAnswers);
