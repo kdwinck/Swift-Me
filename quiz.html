@@ -6,54 +6,73 @@
     <title>Swift Quiz</title>
   </head>
   <body>
-    <form id="quiz">
+    <div>
+      <img src="assets/swiftQuiz.jpg">
+      <form id="quiz">
       <fieldset>
         <label for="cloud">If you were a cloud, which type would you be?</label></br>
         <input type="radio" name="cloud" value="Cumulonimbus" checked/>Cumulonimbus</br>
         <input type="radio" name="cloud" value="Cumulus"/>Cumulus</br>
         <input type="radio" name="cloud" value="Stratus"/>Stratus</br>
-        <input type="radio" name="cloud" value="Stratocumulus"/>Stratocumulus</br>
+        <input type="radio" name="cloud" value="Stratocumulus" class='last'/>Stratocumulus</br>
 
         <label for="color">What color best describes you right now?</label></br>
         <input type="radio" name="color" value="Red" checked/>Red</br>
         <input type="radio" name="color" value="Blue"/>Blue</br>
         <input type="radio" name="color" value="Pink"/>Pink</br>
-        <input type="radio" name="color" value="Purple"/>Purple</br>
+        <input type="radio" name="color" value="Purple" class='last'/>Purple</br>
 
         <label for="exb">Who is your favorite TaySwift Ex-boyfriend?</label></br>
         <input type="radio" name="exb" value="Taylor Lautner" checked/>Taylor Lautnor</br>
         <input type="radio" name="exb" value="Harry Stiles"/>Harry Styles</br>
         <input type="radio" name="exb" value="Zac Efron"/>Zac Efron</br>
-        <input type="radio" name="exb" value="Jake Gyllenhaal"/>Jake Gyllenhaal<br>
+        <input type="radio" name="exb" value="Jake Gyllenhaal" class='last'/>Jake Gyllenhaal<br>
 
         <label for="dino">Which is your favorite dinosaur?</label></br>
         <input type="radio" name="dino" value="Bambiraptor" checked/>Bambiraptor</br>
         <input type="radio" name="dino" value="Diplodocus"/>Diplodocus</br>
-        <input type="radio" name="dino" value="Yangchuanosaurus"/>Yangchuanosaurus</br>
+        <input type="radio" name="dino" value="Yangchuanosaurus" class='last'/>Yangchuanosaurus</br>
 
         <label for="planet">Is Pluto a planet?</label></br>
         <input type="radio" name="planet" value="True" checked/>True</br>
-        <input type="radio" name="planet" value="False"/>False</br>
+        <input type="radio" name="planet" value="False" class='last'/>False</br>
 
         <label for="cats">Are cats awesome?</label></br>
         <input type="radio" name="cats" value="True" checked/>True</br>
-        <input type="radio" name="cats" value="False"/>False</br>
+        <input type="radio" name="cats" value="False" class='last'/>False</br>
 
         <label for="beverage">Which is your preferred beverage?</label></br>
         <input type="radio" name="beverage" value="Alcoholic" checked/>Alcoholic</br>
         <input type="radio" name="beverage" value="Water"/>Water</br>
         <input type="radio" name="beverage" value="Coffee"/>Coffee</br>
-        <input type="radio" name="beverage" value="Soda"/>Soda</br>
+        <input type="radio" name="beverage" value="Soda" class='last'/>Soda</br>
+
+        <label for="season">Which season best fits your current mood?</label></br>
+        <input type="radio" name="season" value="Winter" checked/>Winter</br>
+        <input type="radio" name="season" value="Spring"/>Spring</br>
+        <input type="radio" name="season" value="Summer"/>Summer</br>
+        <input type="radio" name="season" value="Autumn" class='last'/>Autumn</br>
+
+        <label for="pokemon">Choose your starter pokemon!</label></br>
+        <input type="radio" name="pokemon" value="Squirtle" checked/>Squirtle</br>
+        <input type="radio" name="pokemon" value="Bulbasaur"/>Bulbasaur</br>
+        <input type="radio" name="pokemon" value="Charmander"/>Charmander</br>
+        <input type="radio" name="pokemon" value="Pikachu" class='last'/>Pikachu</br>
+
+        <label for="fruit">Which fruit would you eat at this very second?</label></br>
+        <input type="radio" name="fruit" value="Mango" checked/>Mango</br>
+        <input type="radio" name="fruit" value="Strawberry"/>Strawberry</br>
+        <input type="radio" name="fruit" value="Guava"/>Guava</br>
+        <input type="radio" name="fruit" value="Grapefruit" class='last'/>Grapefruit</br>
 
         <label for="bae">Is Taylor Swift bae?</label></br>
         <input type="radio" name="bae" value="Yes" checked/>Yes</br>
-        <input type="radio" name="bae" value="Absolutely Yes"/>Absolutely Yes!</br>
+        <input type="radio" name="bae" value="Absolutely Yes" class='last'/>Absolutely Yes!</br>
 
-
-        <input type='submit' value='Swift Me!'>
+        <input type='submit' id='submit' value='Swift Me!'>
       </fieldset>
     </form>
-
+  </div>
     <ul>
       <li id='song'></li>
     </ul>

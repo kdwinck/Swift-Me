@@ -4,10 +4,48 @@ html {
 }
 
 form {
-  width: 80%;
+  width: 40%;
   margin: auto;
 }
 
 ul {
   font-family: 'Pacifico', cursive;
+}
+
+label, input{
+  margin-left: 30px;
+}
+
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+fieldset{
+  border-color: #fc515f;
+  border-style: solid;
+  box-shadow: 5px 5px 5px #fc515f;
+}
+
+label{
+  font-weight: bold;
+  color: #2B193D;
+  font-family: 'Florence', cursive;
+  font-size: 18px;
+}
+
+.last{
+  margin-bottom: 20px;
+}
+
+#submit{
+  background-color: #fc515f;
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  color: white;
+  padding: 5px;
+  margin-left: 25%;
+  height: 100px;
+  width: 240px;
 }
