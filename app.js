@@ -57,8 +57,9 @@ var quiz = {
         quiz.answers.push(answer);
       }
     }
-    console.log(songsArray);
     quiz.compareAnswers();
+    quiz.sortSongsByCompatibility();
+    quiz.displaySong();
   },
 
   compareAnswers: function(){
@@ -68,9 +69,25 @@ var quiz = {
           songsArray[song].compatibility += 1;
       }
     }
+  },
+
+  sortSongsByCompatibility: function(){
+    songsArray.sort(function (a, b) {
+      if (a.compatibility < b.compatibility) {
+        return 1;
+      }
+      if (a.compatibility > b.compatibility) {
+        return -1;
+      }
+      return 0;
+    });
+  },
+
+  displaySong: function() {
+    var listItem = document.getElementById('song');
+    listItem.textContent = songsArray[0].name;
   }
 };
-
 
 var form = document.getElementById('quiz');
 form.addEventListener('submit', quiz.updateQuizAnswers);
