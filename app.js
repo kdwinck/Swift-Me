@@ -2,14 +2,13 @@
 var songsArray = [];
 
 /////// song object constructor //////////////////////////////////////////////////////////////////////////////////////
-function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, asnwer9, answer10) {
+function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10) {
   this.name = name;
   this.answers = [answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10];
   this.compatibility = 0;
   songsArray.push(this);
 };
 
-Grapefruit
 /////// instantiate song objects /////////////////////////////////////////////////////////////////////////////////////////
 var newYork = new Song('Welcome to New York', 'Cumulus', 'Pink', 'Jake Gyllenhaal', 'Yangchuanosaurus', 'True', 'True', 'Coffee', 'Autumn', 'Charmander', 'Guava');
 var blankSpace = new Song('Blank Space', 'Stratus', 'Purple', 'Zac Efron', 'Diplodocus', 'True', 'True','Alcoholic', 'Winter', 'Squirtle', 'Guava');
