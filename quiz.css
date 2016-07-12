@@ -3,6 +3,59 @@ html {
   width: 100%;
 }
 
+body{
+  margin: 0;
+}
+
+nav {
+ display: flex;
+ justify-content: space-between;
+ background-color: #fc515f ;
+ color: white;
+ width: 100%;
+ font-size: 16px;
+ font-family: 'Pacifico', cursive;
+ margin-top: 0;
+ margin-bottom: 10px;
+}
+
+a {
+ color: white;
+ text-decoration: none;
+}
+
+a:hover {
+ color: #fc515f ;
+ text-decoration: none;
+
+}
+
+.box{
+ background-color:  #fc515f ;
+}
+
+.box:hover {
+ background-color: white;
+ border-radius: 50px;
+ transition-property: background, border-radius;
+ transition-duration: 1s;
+ transition-timing-function: linear;
+}
+
+.left {
+ display:flex;
+ justify-content: space-between;
+ width: 100px;
+ margin-left: 15px;
+}
+
+.right {
+ display:flex;
+ justify-content: space-between;
+ width: 100px;
+ margin-right: 15px;
+}
+
 form {
   width: 40%;
   margin: auto;
@@ -26,6 +79,7 @@ fieldset{
   border-color: #fc515f;
   border-style: solid;
   box-shadow: 5px 5px 5px #fc515f;
+  font-family: 'Lucida Grande';
 }
 
 label{
@@ -39,6 +93,7 @@ label{
   margin-bottom: 20px;
 }
 
+
 #submit{
   background-color: #fc515f;
   font-family: 'Pacifico', cursive;
@@ -48,4 +103,14 @@ label{
   margin-left: 25%;
   height: 100px;
   width: 240px;
+}
+
+
+#song{
+  color: #fc515f;
+  font-size: 64px;
+  list-style-type: none;
+  width: 50%;
+  position: absolute;
+  margin-right: 500px;
 }
