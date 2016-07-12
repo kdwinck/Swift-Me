@@ -2,45 +2,46 @@
 var songsArray = [];
 
 /////// song object constructor //////////////////////////////////////////////////////////////////////////////////////
-function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10) {
+function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, album) {
   this.name = name;
   this.answers = [answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10];
+  this.album = album;
   this.compatibility = 0;
   songsArray.push(this);
 };
 
 /////// instantiate song objects /////////////////////////////////////////////////////////////////////////////////////////
-var newYork = new Song('Welcome to New York', 'Cumulus', 'Pink', 'Jake Gyllenhaal', 'Yangchuanosaurus', 'True', 'True', 'Coffee', 'Autumn', 'Charmander', 'Guava');
-var blankSpace = new Song('Blank Space', 'Stratus', 'Purple', 'Zac Efron', 'Diplodocus', 'True', 'True','Alcoholic', 'Winter', 'Squirtle', 'Guava');
-var style = new Song('Style', 'Stratocumulus', 'Red', 'Taylor Lautner', 'Diplodocus', 'True', 'True', 'Water', 'Spring', 'Bulbasaur', 'Mango');
-var woods = new Song('Out of the Woods', 'Stratus', 'Blue', 'Taylor Lautner', 'Diplodocus', 'True','False', 'Water', 'Winter', 'Charmander', 'Strawberry');
-var stay = new Song('All You Had to Do Was Stay', 'Cumulonimbus', 'Purple', 'Taylor Lautner', 'Bambiraptor' ,'True', 'false', 'Soda', 'Spring', 'Pikachu', 'Strawberry');
-var blankSpace = new Song('Blank Space', 'Stratus', 'Purple', 'Zac Efron' , 'Bambiraptor','False', 'True', 'Coffee', 'Summer', 'Pikachu', 'Mango');
-var shake = new Song('Shake It Off', 'Stratus', 'Red', 'Taylor Lautner', 'Diplodocus', 'True','False', 'Water', 'Summer', 'Squirtle', 'Strawberry');
-var wish = new Song('I Wish You Would', 'Cumulonimbus', 'Blue', 'Zac Efron', 'Yangchuanosaurus','False','False','Alcoholic', 'Winter', 'Squirtle', 'Guava');
-var blood = new Song('Bad Blood', 'Cumulus', 'Red', 'Jake Gyllenhaal','Yangchuanosaurus','False', 'True', 'Soda', 'Autumn', 'Charmander', 'Grapefruit');
-var dreams = new Song('Wildest Dreams', 'Stratus', 'Blue', 'Jake Gyllenhaal', 'Yangchuanosaurus', 'True', 'True', 'Coffee', 'Autumn', 'Bulbasaur', 'Guava');
-var girl = new Song('How you Get the Girl', 'Stratus', 'Pink', 'Jake Gyllenhaal', 'Diplodocus', 'True', 'True', 'Soda', 'Spring', 'Squirtle', 'Strawberry');
-var love = new Song('This Love', 'Cumulonimbus', 'Blue', 'Taylor Lautner', 'Diplodocus', 'True', 'False', 'Alcoholic', 'Summer', 'Squirtle', 'Mango');
-var places = new Song('I Know Places', 'Cumulus', 'Purple', 'Taylor Lautner', 'Diplodocus', 'False', 'False', 'Coffee', 'Winter', 'Charmander', 'Guava');
-var clean = new Song('Clean', 'Cumulus', 'Red', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Alcoholic', 'Autumn', 'Bulbasaur', 'Mango');
-var grace = new Song('State of Grace', 'Cumulonimbus', 'Pink', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'False', 'Water', 'Spring', 'Pikachu', 'Strawberry');
-var red = new Song('Red', 'Cumulus', 'Blue', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Coffee', 'Winter', 'Bulbasaur', 'Grapefruit');
-var treacherous = new Song('Treacherous', 'Stratus', 'Red', 'Jake Gyllenhaal','Bambiraptor', 'True', 'True', 'Soda', 'Autumn', 'Bulbasaur', 'Mango');
-var trouble = new Song('I Knew You Were Trouble', 'Stratocumulus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Coffee', 'Summer', 'Pikachu', 'Guava');
-var well = new Song( 'All Too Well', 'Cumulonimbus', 'Pink', 'Jake Gyllenhaal', 'Bambiraptor', 'True', 'True','Alcoholic', 'Spring', 'Squirtle', 'Strawberry');
-var twentyTwo = new Song('22', 'Cumulonimbus', 'Red', 'Harry Styles', 'Bambiprator', 'True','False', 'Coffee', 'Winter', 'Charmander', 'Mango');
-var almost = new Song('Almost Do', 'Cumulus', 'Pink', 'Taylor Lautner', 'Bambiraptor', 'False', 'True', 'Water', 'Autumn', 'Charmander', 'Grapefruit');
-var ever = new Song('We Are Never Getting Back Together', 'Stratocumulus', 'Purple', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'False', 'Coffee', 'Summer', 'Bulbasaur', 'Strawberry');
-var stay = new Song('Stay Stay Stay', 'Stratus', 'Pink','Taylor Lautner', 'Diplodocus', 'True', 'True', 'Water', 'Spring', 'Bulbasaur', 'Strawberry');
-var time = new Song('The Last Time', 'Stratus', 'Red', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Alcoholic', 'Winter', 'Squirtle', 'Mango');
-var holy = new Song('Holy Ground', 'Cumulus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Water', 'Autumn', 'Pikachu', 'Guava');
-var beautiful = new Song('Sad Beautiful Tragic', 'Stratocumulus', 'Blue', 'Pink', 'Bambiraptor', 'True','False','Alcoholic', 'Summer', 'Pikachu', 'Mango');
-var lucky = new Song('The Lucky One', 'Stratus', 'Blue', 'Jake Gyllenhaal', 'Diplodocus', 'False', 'True', 'Soda', 'Summer', 'Charmander', 'Strawberry');
-var changed = new Song('Everything Has Changed', 'Stratocumulus', 'Pink', 'Taylor Lautner', 'Diplodocus', 'True', 'False', 'Coffee', 'Winter', 'Pikachu', 'Guava');
-var starlight = new Song('Starlight', 'Stratus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Alcoholic', 'Spring', 'Bulbasaur', 'Mango');
-var again = new Song('Begin Again', 'Cumulus', 'Red', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'True', 'Alcoholic', 'Autumn', 'Pikachu', 'Grapefruit');
-var story = new Song('Love Story', 'Stratus', 'Purple', 'Jake Gyllenhaal', 'Diplodocus', 'True', 'True', 'Coffee', 'Autumn', 'Squirtle', 'Mango');
+var newYork = new Song('Welcome to New York', 'Cumulus', 'Pink', 'Jake Gyllenhaal', 'Yangchuanosaurus', 'True', 'True', 'Coffee', 'Autumn', 'Charmander', 'Guava', 'assets/album.png');
+var blankSpace = new Song('Blank Space', 'Stratus', 'Purple', 'Zac Efron', 'Diplodocus', 'True', 'True','Alcoholic', 'Winter', 'Squirtle', 'Guava', 'assets/album.png');
+var style = new Song('Style', 'Stratocumulus', 'Red', 'Taylor Lautner', 'Diplodocus', 'True', 'True', 'Water', 'Spring', 'Bulbasaur', 'Mango', 'assets/album.png');
+var woods = new Song('Out of the Woods', 'Stratus', 'Blue', 'Taylor Lautner', 'Diplodocus', 'True','False', 'Water', 'Winter', 'Charmander', 'Strawberry', 'assets/album.png');
+var stay = new Song('All You Had to Do Was Stay', 'Cumulonimbus', 'Purple', 'Taylor Lautner', 'Bambiraptor' ,'True', 'false', 'Soda', 'Spring', 'Pikachu', 'Strawberry', 'assets/album.png');
+var blankSpace = new Song('Blank Space', 'Stratus', 'Purple', 'Zac Efron' , 'Bambiraptor','False', 'True', 'Coffee', 'Summer', 'Pikachu', 'Mango', 'assets/album.png');
+var shake = new Song('Shake It Off', 'Stratus', 'Red', 'Taylor Lautner', 'Diplodocus', 'True','False', 'Water', 'Summer', 'Squirtle', 'Strawberry', 'assets/album.png');
+var wish = new Song('I Wish You Would', 'Cumulonimbus', 'Blue', 'Zac Efron', 'Yangchuanosaurus','False','False','Alcoholic', 'Winter', 'Squirtle', 'Guava', 'assets/album.png');
+var blood = new Song('Bad Blood', 'Cumulus', 'Red', 'Jake Gyllenhaal','Yangchuanosaurus','False', 'True', 'Soda', 'Autumn', 'Charmander', 'Grapefruit', 'assets/album.png');
+var dreams = new Song('Wildest Dreams', 'Stratus', 'Blue', 'Jake Gyllenhaal', 'Yangchuanosaurus', 'True', 'True', 'Coffee', 'Autumn', 'Bulbasaur', 'Guava', 'assets/album.png');
+var girl = new Song('How you Get the Girl', 'Stratus', 'Pink', 'Jake Gyllenhaal', 'Diplodocus', 'True', 'True', 'Soda', 'Spring', 'Squirtle', 'Strawberry', 'assets/album.png');
+var love = new Song('This Love', 'Cumulonimbus', 'Blue', 'Taylor Lautner', 'Diplodocus', 'True', 'False', 'Alcoholic', 'Summer', 'Squirtle', 'Mango', 'assets/album.png');
+var places = new Song('I Know Places', 'Cumulus', 'Purple', 'Taylor Lautner', 'Diplodocus', 'False', 'False', 'Coffee', 'Winter', 'Charmander', 'Guava', 'assets/album.png');
+var clean = new Song('Clean', 'Cumulus', 'Red', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Alcoholic', 'Autumn', 'Bulbasaur', 'Mango', 'assets/album.png' );
+var grace = new Song('State of Grace', 'Cumulonimbus', 'Pink', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'False', 'Water', 'Spring', 'Pikachu', 'Strawberry', 'assets/red.png');
+var red = new Song('Red', 'Cumulus', 'Blue', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Coffee', 'Winter', 'Bulbasaur', 'Grapefruit', 'assets/red.png');
+var treacherous = new Song('Treacherous', 'Stratus', 'Red', 'Jake Gyllenhaal','Bambiraptor', 'True', 'True', 'Soda', 'Autumn', 'Bulbasaur', 'Mango', 'assets/red.png');
+var trouble = new Song('I Knew You Were Trouble', 'Stratocumulus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Coffee', 'Summer', 'Pikachu', 'Guava', 'assets/red.png');
+var well = new Song( 'All Too Well', 'Cumulonimbus', 'Pink', 'Jake Gyllenhaal', 'Bambiraptor', 'True', 'True','Alcoholic', 'Spring', 'Squirtle', 'Strawberry', 'assets/red.png');
+var twentyTwo = new Song('22', 'Cumulonimbus', 'Red', 'Harry Styles', 'Bambiprator', 'True','False', 'Coffee', 'Winter', 'Charmander', 'Mango', 'assets/red.png');
+var almost = new Song('Almost Do', 'Cumulus', 'Pink', 'Taylor Lautner', 'Bambiraptor', 'False', 'True', 'Water', 'Autumn', 'Charmander', 'Grapefruit', 'assets/red.png');
+var ever = new Song('We Are Never Getting Back Together', 'Stratocumulus', 'Purple', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'False', 'Coffee', 'Summer', 'Bulbasaur', 'Strawberry', 'assets/red.png');
+var stay = new Song('Stay Stay Stay', 'Stratus', 'Pink','Taylor Lautner', 'Diplodocus', 'True', 'True', 'Water', 'Spring', 'Bulbasaur', 'Strawberry', 'assets/red.png');
+var time = new Song('The Last Time', 'Stratus', 'Red', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Alcoholic', 'Winter', 'Squirtle', 'Mango', 'assets/red.png');
+var holy = new Song('Holy Ground', 'Cumulus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Water', 'Autumn', 'Pikachu', 'Guava', 'assets/red.png');
+var beautiful = new Song('Sad Beautiful Tragic', 'Stratocumulus', 'Blue', 'Pink', 'Bambiraptor', 'True','False','Alcoholic', 'Summer', 'Pikachu', 'Mango', 'assets/red.png');
+var lucky = new Song('The Lucky One', 'Stratus', 'Blue', 'Jake Gyllenhaal', 'Diplodocus', 'False', 'True', 'Soda', 'Summer', 'Charmander', 'Strawberry', 'assets/red.png');
+var changed = new Song('Everything Has Changed', 'Stratocumulus', 'Pink', 'Taylor Lautner', 'Diplodocus', 'True', 'False', 'Coffee', 'Winter', 'Pikachu', 'Guava', 'assets/red.png');
+var starlight = new Song('Starlight', 'Stratus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Alcoholic', 'Spring', 'Bulbasaur', 'Mango', 'assets/red.png');
+var again = new Song('Begin Again', 'Cumulus', 'Red', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'True', 'Alcoholic', 'Autumn', 'Pikachu', 'Grapefruit', 'assets/red.png');
+var story = new Song('Love Story', 'Stratus', 'Purple', 'Jake Gyllenhaal', 'Diplodocus', 'True', 'True', 'Coffee', 'Autumn', 'Squirtle', 'Mango', 'assets/red.png');
 
 
 var quiz = {
@@ -86,7 +87,10 @@ var quiz = {
 
   displaySong: function() {
     var listItem = document.getElementById('song');
+    var albumItem = document.createElement('img');
     listItem.textContent = songsArray[0].name;
+    albumItem.src = songsArray[0].album;
+    listItem.appendChild(albumItem);
   },
 
   getLocalStorage: function() {
