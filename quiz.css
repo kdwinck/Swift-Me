@@ -105,11 +105,6 @@ label{
   width: 240px;
 }
 
-#selection{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
 
 #song{
   color: #fc515f;
@@ -117,4 +112,5 @@ justify-content: center;
   list-style-type: none;
   width: 50%;
   position: absolute;
+  margin-right: 500px;
 }

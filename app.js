@@ -2,10 +2,11 @@
 var songsArray = [];
 
 /////// song object constructor //////////////////////////////////////////////////////////////////////////////////////
-function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, album) {
+function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, album, video) {
   this.name = name;
   this.answers = [answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10];
   this.album = album;
+  this.video = video;
   this.compatibility = 0;
   songsArray.push(this);
 };
