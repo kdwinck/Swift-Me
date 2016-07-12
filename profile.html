@@ -7,14 +7,34 @@
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
+    <nav>
+     <div class = 'left'>
+       <p><a href = 'quiz.html' class ='box'>Quiz</a></p>
+       <p><a href = 'profile.html' class = 'box'>Profile</a></p>
+     </div>
+     <div class = 'right'>
+       <p><a href = 'about.html' class ='box'>About</a></p>
+       <p><a href = 'index.html' class ='box'>Login</a></p>
+     </div>
+    </nav>
+
     <section>
 
       <article id="username"></article>
 
-      <ul>
-        <li id="quizTaken"></li>
-        <li id="recentSong"></li>
-      </ul>
+      <section id="basic">
+        <ul>
+          <li id="quizTaken"></li>
+          <li id="recentSong"></li>
+        </ul>
+
+        <input type="button" value="Add To Favorites" id="addFav">
+      </section>
+
+      <section>
+        <ul  id="favorites"></ul>
+      </section>
 
     </section>
     <script type="text/javascript" src="profile.js"></script>
