@@ -5,7 +5,6 @@ html {
 
 body {
   margin: 0px;
-  background-color: grey;
 }
 
 nav {
@@ -14,10 +13,40 @@ nav {
   background-color: #fc515f;
   color: white;
   width: 100%;
-  border-radius: 5px;
   font-size: 16px;
   font-family: 'Pacifico', cursive;
   margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #fc515f;
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fc515f;
+  text-decoration: none;
+
+}
+
+.box{
+  background-color:  #fc515f;
+}
+
+.box:hover {
+  background-color: white;
+  border-radius: 50px;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 .left {
@@ -35,28 +64,117 @@ nav {
 }
 
 .blurb {
-  width: 100%;
-  height: 350px;
-  background-color: rgba(255, 255, 255, .3);
-  color: white;
-  border-radius: 25px;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-left: 160px;
+  width: 80%;
+  height: 400px;
+  border-color: #fc515f;
+  border-style: solid;
+  box-shadow: 5px 5px 5px #fc515f;
+  margin-bottom: 20px;
 }
 
-.blurbparagraph{
-  font-size: 16px;
-}
-
-#carolina {
+.card-container {
   float: left;
+  height: 350px;
+  perspective: 600px;
+  position: relative;
+  width: 400px;
   margin-right: 20px;
 }
 
-#kyle {
-  float:right;
+.kyle-container {
+  float: right;
+  height: 350px;
+  perspective: 600px;
+  position: relative;
+  width: 400px;
   margin-left: 20px;
 }
 
-#yamile {
-  float: left;
+.card {
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+
+.blurbparagraph{
+  font-size: 18px;
+  width: 95%;
+  padding-left: 10px;
+  padding-right: 30px;
+  font-family: 'Lucida Grande';
+}
+
+.namearea {
+  width: 675px;
+}
+
+.names{
+  display: flex;
+  justify-content: center;
+  background-color: #fc515f;
+  border-radius: 35px;
+  color: white;
+  height: 60px;
+  width: 120px;
+  font-size: 30px;
+  font-family: 'Pacifico', cursive;
+  margin:auto;
+  margin-top: 15px;
+
+}
+
+#selectedbox{
+  color: #fc515f;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 50px;
+}
+
+#kyleblurbparagraph {
+  font-size: 18px;
+  width: 95%;
+  padding-right: 10px;
+  padding-left: 30px;
+  font-family: 'Lucida Grande';
+}
+
+#carolina {
   margin-right: 20px;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+#kyle {
+  margin-left: 20px;
+  margin-top: 37px;
+  margin-right: 30px;
+}
+
+#yamile {
+  margin-right: 20px;
+  margin-top: 37px;
+  margin-left: 30px;
 }
