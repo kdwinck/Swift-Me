@@ -67,6 +67,8 @@ label {
   border: none;
   color: white;
   font-size: 24px;
+  width: 100%;
+  cursor: pointer;
   font-family: 'Pacifico', cursive;
 }
 
@@ -76,5 +78,6 @@ label {
   width: 50%;
   border-radius: 5px;
   font-size: 16px;
+  cursor: pointer;
   font-family: 'Pacifico', cursive;
-};
+}
