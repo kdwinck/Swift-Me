@@ -2,11 +2,10 @@
 var songsArray = [];
 
 /////// song object constructor //////////////////////////////////////////////////////////////////////////////////////
-function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, album, video) {
+function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, album) {
   this.name = name;
   this.answers = [answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10];
   this.album = album;
-  this.video = video;
   this.compatibility = 0;
   songsArray.push(this);
 };
@@ -98,10 +97,19 @@ var quiz = {
     var user = JSON.parse(localStorage.getItem('User'));
     user.timesQuizTaken += 1;
     user.lastSong = songsArray[0].name;
+    quiz.updateHistory(user);
     var strUser = JSON.stringify(user);
     localStorage.setItem('User', strUser);
   },
 
+  updateHistory: function(user) {
+    var song = user.lastSong;
+    if (user.history.hasOwnProperty(song)) {
+      user.history[song] += 1;
+    } else {
+      user.history[song] = 1;
+    }
+  }
 };
 
 var form = document.getElementById('quiz');
