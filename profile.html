@@ -24,7 +24,7 @@
 
       <article id="username"></article>
 
-      <section id="basic">
+      <section  class="bgc" id="basic">
         <ul>
           <li id="quizTaken"></li>
           <li id="recentSong"></li>
@@ -36,15 +36,24 @@
       <section id="mid">
         <section id="favorites">
           <h3 id="favHead">Favorites</h3>
-          <ul id="favSongs"></ul>
+          <ul class="bgc" id="favSongs"></ul>
         </section>
 
         <img src="assets/profile_swift.jpg" alt="">
       </section>
 
       <section id="graph">
-        <canvas id="bar" width="300" height="300"></canvas>
+        <canvas  class="bgc" id="bar" width="300" height="500"></canvas>
       </section>
+
+      <section id="custColor">
+        <div class="select" id="lightgrey"></div>
+        <div class="select" id="lightyellow"></div>
+        <div class="select" id="violet"></div>
+        <div class="select" id="lightgreen"></div>
+        <div class="select" id="default"></div>
+      </section>
+
     </main>
     <script type="text/javascript" src="profile.js"></script>
   </body>
