@@ -5,6 +5,7 @@
     <title>Swift Profile</title>
     <link rel="stylesheet" href="profile.css">
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
   </head>
   <body>
 
@@ -19,7 +20,7 @@
      </div>
     </nav>
 
-    <section>
+    <main>
 
       <article id="username"></article>
 
@@ -32,11 +33,19 @@
         <input type="button" value="Add To Favorites" id="addFav">
       </section>
 
-      <section>
-        <ul  id="favorites"></ul>
+      <section id="mid">
+        <section id="favorites">
+          <h3 id="favHead">Favorites</h3>
+          <ul id="favSongs"></ul>
+        </section>
+
+        <img src="assets/profile_swift.jpg" alt="">
       </section>
 
-    </section>
+      <section id="graph">
+        <canvas id="bar" width="300" height="300"></canvas>
+      </section>
+    </main>
     <script type="text/javascript" src="profile.js"></script>
   </body>
 </html>

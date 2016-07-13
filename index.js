@@ -1,8 +1,9 @@
-function User(username, timesQuizTaken, lastSong, favorites) {
+function User(username, timesQuizTaken, lastSong, favorites, history) {
   this.username = username;
   this.timesQuizTaken = timesQuizTaken || 0;
-  this.lastSong = lastSong || null;
+  this.lastSong = lastSong || '';
   this.favorites = favorites || [];
+  this.history = history || {};
 }
 
 function createUser(event) {
