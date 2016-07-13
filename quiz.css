@@ -62,14 +62,25 @@ form {
 }
 
 ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-family: 'Pacifico', cursive;
+  margin-top: 100px
+}
+
+li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 900px;
 }
 
 label, input{
   margin-left: 30px;
 }
 
-div{
+section{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -112,5 +123,33 @@ label{
   list-style-type: none;
   width: 50%;
   position: absolute;
-  margin-right: 500px;
+}
+
+#share{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #bbdfdc;
+  height: 260px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+  margin-top: 200px;
+  position: fixed;
+}
+
+#share > img{
+  padding: 7px;
+}
+
+#tay{
+  margin-left: 50px;
+}
+
+#selection{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 50%;
 }
