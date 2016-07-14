@@ -83,6 +83,18 @@ footer {
   width: 120px;
 }
 
+.boxselected{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  width: 60px;
+}
+
+.boxselected a {
+  color: #fc515f;
+}
+
 .blurb {
   display: flex;
   overflow: hidden;
@@ -195,18 +207,18 @@ footer {
   margin: 0;
 }
 
+.picture {
+  margin-right: 20px;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
 #kyleblurbparagraph {
   font-size: 18px;
   width: 95%;
   padding-right: 10px;
   padding-left: 30px;
   font-family: 'Lucida Grande';
-}
-
-.picture {
-  margin-right: 20px;
-  margin-top: 37px;
-  margin-left: 30px;
 }
 
 #kyle {
