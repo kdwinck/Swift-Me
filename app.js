@@ -2,10 +2,11 @@
 var songsArray = [];
 
 /////// song object constructor //////////////////////////////////////////////////////////////////////////////////////
-function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, album) {
+function Song (name, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10, album, music) {
   this.name = name;
   this.answers = [answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9, answer10];
   this.album = album;
+  this.music = music;
   this.compatibility = 0;
   songsArray.push(this);
 };
@@ -88,9 +89,11 @@ var quiz = {
   displaySong: function() {
     var songItem = document.getElementById('albumArt');
     var listItem = document.getElementById('song');
+    var musicItem = document.getElementById('mp3')
     var albumItem = document.createElement('img');
     listItem.textContent = songsArray[0].name;
     albumItem.src = songsArray[0].album;
+    musicItem.src = songsArray[0].music;
     songItem.appendChild(albumItem);
   },
 
