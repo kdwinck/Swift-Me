@@ -16,8 +16,17 @@
        <p><a href = 'index.html' class ='box'>Login</a></p>
      </div>
    </nav>
-    <div>
-      <img src="assets/swiftQuiz.jpg">
+    <section>
+      <div id='share'>
+        <img src='assets/facebook.png'>
+        <img src='assets/twitter.png'>
+        <img src='assets/insta.png'>
+        <img src='assets/snapchat.png'>
+        <img src='assets/gmail.png'>
+      </div>
+      <div>
+        <img id='tay' src="assets/swiftQuiz.jpg">
+      </div>
       <form id="quiz">
         <fieldset>
           <label for="cloud">If you were a cloud, which type would you be?</label></br>
@@ -82,12 +91,13 @@
           <input type='submit' id='submit' value='Swift Me!'>
         </fieldset>
       </form>
-    </div>
-    <div id='selction'>
-      <ul>
-        <li id='song'></li>
-      </ul>
-    </div>
+    </section>
+    <section id='selection'>
+      <div id='title'>
+        <h2 id='song'></h2>
+      </div>
+      <div id='albumArt'></div>
+    </section>
     <script type="text/javascript" src="app.js"></script>
   </body>
 </html>
