@@ -134,8 +134,8 @@ label{
   position: fixed;
 }
 
-#share > img{
-  padding: 7px;
+#share > a{
+  padding: 4px;
 }
 
 #tay{
