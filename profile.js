@@ -84,7 +84,8 @@ var graph = {
           display: true,
           text: 'Quiz Results',
           fontSize: 24,
-          fontColor: 'white'
+          fontFamily: 'Pacifico',
+          fontColor: '#fc515f'
         }
       }
     });
@@ -106,7 +107,7 @@ function updateBgColor(event) {
     } else if (id === 'lightyellow') {
       elements[i].style.background = 'lightyellow';
     } else if (id === 'violet') {
-      elements[i].style.background = 'violet';
+      elements[i].style.background = '#e0b1e9';
     } else if (id === 'lightgreen') {
       elements[i].style.background = 'lightgreen';
     } else if (id === 'default') {

@@ -24,43 +24,8 @@ nav {
 
 a {
  color: white;
+ margin: auto;
  text-decoration: none;
-}
-
-a:hover {
- color: #fc515f ;
- text-decoration: none;
-
-}
-
-.box{
- background-color:  #fc515f ;
-}
-
-.box:hover {
- background-color: white;
- border-radius: 50px;
- transition-property: background, border-radius;
- transition-duration: 1s;
- transition-timing-function: linear;
-}
-
-.left {
- display:flex;
- justify-content: space-between;
- width: 100px;
- margin-left: 15px;
-}
-
-.right {
- display:flex;
- justify-content: space-between;
- width: 100px;
- margin-right: 15px;
-}
-
-main {
-  width: 80%;
 }
 
 article {
@@ -80,8 +45,63 @@ li {
   padding: 10px;
 }
 
-img {
-  max-height: 360px;
+main {
+  width: 80%;
+}
+
+canvas {
+  background-color: #bbdfdc;
+}
+
+a:hover {
+ color: #fc515f;
+ text-decoration: none;
+}
+
+.left {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15px;
+  width: 120px;
+}
+
+.right {
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 15px;
+  width: 120px;
+}
+
+.box {
+ display: flex;
+ align-items: center;
+ background-color: #fc515f;
+ height: 100%;
+ width: 60px;
+}
+
+.box:hover {
+  height: 100%;
+  background-color: white;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.box:hover a {
+  color: #fc515f;
+}
+
+.selected {
+  display: flex;
+  height: 100%;
+  width: 60px;
+  background-color: white;
+}
+
+.selected a {
+  color: #fc515f;
 }
 
 .select {
@@ -93,6 +113,7 @@ img {
   display: flex;
   justify-content: space-between;
   background-color: #bbdfdc;
+  font-family: 'Lucida Grande';
   width: 100%;
 }
 
@@ -110,6 +131,7 @@ img {
 
 #mid {
   display: flex;
+  font-family: 'Lucida Grande';
 }
 
 #favorites {
@@ -152,9 +174,6 @@ img {
   background-color:  #fc515f;
 }
 
-canvas {
-  background-color: #bbdfdc;
-}
 
 #lightgrey {
   background-color: lightgrey;
@@ -165,7 +184,7 @@ canvas {
 }
 
 #violet {
-  background-color: violet;
+  background-color: #e0b1e9;
 }
 
 #lightgreen {
