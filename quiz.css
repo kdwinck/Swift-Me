@@ -90,6 +90,10 @@ label{
   font-size: 18px;
 }
 
+audio{
+margin-left: 500px;
+}
+
 .last{
   margin-bottom: 20px;
 }
@@ -134,8 +138,8 @@ label{
   position: fixed;
 }
 
-#share > img{
-  padding: 7px;
+#share > a{
+  padding: 4px;
 }
 
 #tay{
@@ -151,7 +155,7 @@ label{
 
 #title{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 500px;
   height: 300px;
 }

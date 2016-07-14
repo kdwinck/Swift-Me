@@ -214,3 +214,21 @@ footer {
   margin-top: 37px;
   margin-right: 30px;
 }
+
+#share{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #bbdfdc;
+  height: 260px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+  margin-top: 200px;
+  position: fixed;
+}
+
+#share > a{
+  padding: 4px;
+}
