@@ -61,15 +61,16 @@ form {
   margin: auto;
 }
 
-ul {
+h2 {
   font-family: 'Pacifico', cursive;
+  width: auto;
 }
 
 label, input{
   margin-left: 30px;
 }
 
-div{
+section{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -105,12 +106,52 @@ label{
   width: 240px;
 }
 
+#title{
+  margin-left: 60px;
+}
 
 #song{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #fc515f;
   font-size: 64px;
   list-style-type: none;
-  width: 50%;
-  position: absolute;
-  margin-right: 500px;
+  /*width: 33%;*/
+}
+
+#share{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
+  background-color: #bbdfdc;
+  height: 260px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 5px;
+  margin-top: 200px;
+  position: fixed;
+}
+
+#share > img{
+  padding: 7px;
+}
+
+#tay{
+  margin-left: 50px;
+}
+
+#selection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#title{
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 300px;
 }

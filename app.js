@@ -86,11 +86,12 @@ var quiz = {
   },
 
   displaySong: function() {
+    var songItem = document.getElementById('albumArt');
     var listItem = document.getElementById('song');
     var albumItem = document.createElement('img');
     listItem.textContent = songsArray[0].name;
     albumItem.src = songsArray[0].album;
-    listItem.appendChild(albumItem);
+    songItem.appendChild(albumItem);
   },
 
   getLocalStorage: function() {
