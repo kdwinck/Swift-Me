@@ -114,5 +114,7 @@ var quiz = {
   }
 };
 
+
+
 var form = document.getElementById('quiz');
 form.addEventListener('submit', quiz.updateQuizAnswers);
