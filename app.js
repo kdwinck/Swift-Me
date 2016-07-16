@@ -27,7 +27,7 @@ var love = new Song('This Love', ['Cumulonimbus', 'Blue', 'Taylor Lautner', 'Dip
 var places = new Song('I Know Places', ['Cumulus', 'Purple', 'Taylor Lautner', 'Diplodocus', 'False', 'False', 'Coffee', 'Winter', 'Charmander', 'Guava'], 'assets/album.png', '1989/IKnowPlaces.m4a');
 var clean = new Song('Clean', ['Cumulus', 'Red', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Alcoholic', 'Autumn', 'Bulbasaur', 'Mango'], 'assets/album.png', '1989/Clean.m4a');
 var grace = new Song('State of Grace', ['Cumulonimbus', 'Pink', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'False', 'Water', 'Spring', 'Pikachu', 'Strawberry'], 'assets/red.png', 'red/StateOfGrace.m4a');
-var red = new Song('Red', 'Cumulus', ['Blue', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Coffee', 'Winter', 'Bulbasaur', 'Grapefruit'], 'assets/red.png', 'red/Red.m4a');
+var red = new Song('Red', ['Cumulus', 'Blue', 'Harry Styles', 'Diplodocus', 'True', 'True', 'Coffee', 'Winter', 'Bulbasaur', 'Grapefruit'], 'assets/red.png', 'red/Red.m4a');
 var treacherous = new Song('Treacherous', ['Stratus', 'Red', 'Jake Gyllenhaal','Bambiraptor', 'True', 'True', 'Soda', 'Autumn', 'Bulbasaur', 'Mango'], 'assets/red.png', 'red/Treacherous.m4a');
 var trouble = new Song('I Knew You Were Trouble', ['Stratocumulus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Coffee', 'Summer', 'Pikachu', 'Guava'], 'assets/red.png', 'red/IKnewYouWereTrouble.m4a');
 var well = new Song( 'All Too Well', ['Cumulonimbus', 'Pink', 'Jake Gyllenhaal', 'Bambiraptor', 'True', 'True','Alcoholic', 'Spring', 'Squirtle', 'Strawberry'], 'assets/red.png', 'red/AllTooWell.m4a');
@@ -40,8 +40,8 @@ var holy = new Song('Holy Ground', ['Cumulus', 'Purple', 'Harry Styles', 'Bambir
 var beautiful = new Song('Sad Beautiful Tragic', ['Stratocumulus', 'Blue', 'Pink', 'Bambiraptor', 'True','False','Alcoholic', 'Summer', 'Pikachu', 'Mango'], 'assets/red.png', 'red/SadBeautifulTragic.m4a');
 var lucky = new Song('The Lucky One', ['Stratus', 'Blue', 'Jake Gyllenhaal', 'Diplodocus', 'False', 'True', 'Soda', 'Summer', 'Charmander', 'Strawberry'], 'assets/red.png', 'red/TheLuckyOne.m4a');
 var changed = new Song('Everything Has Changed', ['Stratocumulus', 'Pink', 'Taylor Lautner', 'Diplodocus', 'True', 'False', 'Coffee', 'Winter', 'Pikachu', 'Guava'], 'assets/red.png', 'red/EverythingHasChanged.m4a');
-var starlight = new Song('Starlight', ['Stratus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Alcoholic', 'Spring', 'Bulbasaur', 'Mango', 'assets/red.png'], 'red/Starlight.m4a');
-var again = new Song('Begin Again', ['Cumulus', 'Red', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'True', 'Alcoholic', 'Autumn', 'Pikachu', 'Grapefruit', 'assets/red.png'], 'red/BeginAgain.m4a');
+var starlight = new Song('Starlight', ['Stratus', 'Purple', 'Harry Styles', 'Bambiraptor', 'True', 'True', 'Alcoholic', 'Spring', 'Bulbasaur', 'Mango'], 'assets/red.png', 'red/Starlight.m4a');
+var again = new Song('Begin Again', ['Cumulus', 'Red', 'Taylor Lautner', 'Yangchuanosaurus', 'True', 'True', 'Alcoholic', 'Autumn', 'Pikachu', 'Grapefruit'], 'assets/red.png', 'red/BeginAgain.m4a');
 
 var quiz = {
   answers: [],
