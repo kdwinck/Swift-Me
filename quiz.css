@@ -170,7 +170,8 @@ margin-left: 500px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   padding: 5px;
-  margin-top: 200px;
+  left: 0px;
+  top: 200px;
   position: fixed;
 }
 
