@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  background-color: rgba(255, 255, 255, .3);
+  color: white;
+  height: 200px;
+  width: 300px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 25px;
+}
+
+form {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  visibility: visible;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  color: #fc515f;
+  font-size: 24px;
+  margin-top: 5px;
+  font-family: 'Pacifico', cursive;
+}
+
+#enter {
+  position: absolute;
+  background-color: #fc515f;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  visibility: hidden;
+  border-radius: 7px;
+}
+
+#enterButton {
+  background-color: #fc515f;
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: 'Pacifico', cursive;
+}
+
+#submit {
+  background-color: #fc515f;
+  color: white;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Pacifico', cursive;
+}

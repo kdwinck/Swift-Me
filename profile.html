@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Swift Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.min.js"></script>
+  </head>
+  <body>
+
+    <nav>
+     <div class='left'>
+       <p class='box'><a href='quiz.html'>Quiz</a></p>
+       <p class='selected'><a href='profile.html'>Profile</a></p>
+     </div>
+     <div class='right'>
+       <p class='box'><a href='about.html'>About</a></p>
+       <p class='box'><a href='index.html'>Login</a></p>
+     </div>
+    </nav>
+
+    <div id='share'>
+      <a href='http://www.facebook.com' target="_blank"><img src='assets/facebook.png'></a>
+      <a href='http://www.twitter.com' target='_blank'><img src='assets/twitter.png'></a>
+      <a href='http://www.instagram.com' target='_blank'><img src='assets/insta.png'></a>
+      <a href='http://www.snapchat.com' target='_blank'><img src='assets/snapchat.png'></a>
+      <a href='http://www.gmail.com' target='_blank'><img src='assets/gmail.png'></a>
+    </div>
+
+    <main>
+
+      <article id="username"></article>
+
+      <section  class="bgc" id="basic">
+        <ul>
+          <li id="quizTaken"></li>
+          <li id="recentSong"></li>
+        </ul>
+
+        <input type="button" value="Add To Favorites" id="addFav">
+      </section>
+
+      <section id="mid">
+        <section id="favorites">
+          <h3 id="favHead">Favorites</h3>
+          <ul class="bgc" id="favSongs"></ul>
+        </section>
+
+        <img src="assets/profile_swift.jpg" alt="">
+      </section>
+
+      <section id="graph">
+        <canvas  class="bgc" id="bar" width="300" height="500"></canvas>
+      </section>
+
+      <section id="custColor">
+        <div class="select" id="lightgrey"></div>
+        <div class="select" id="lightyellow"></div>
+        <div class="select" id="violet"></div>
+        <div class="select" id="lightgreen"></div>
+        <div class="select" id="default"></div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p class = 'copy'>&copy; 2016 TeamBaes</p>
+      <p class = 'copy'>Baeta Version 0.1.2</p>
+    </footer>
+
+    <script type="text/javascript" src="profile.js"></script>
+  </body>
+</html>
